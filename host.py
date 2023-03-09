@@ -1,11 +1,11 @@
 import graphB
 import physicsB
 from time import sleep
-jared=1
+jared=10
 xD=jared
 yD=jared
-xM=jared
-yM=jared
+xM=0
+yM=0
 t=0
 testT=100
 version=1
@@ -43,15 +43,40 @@ def userInterface():
         in4=input("Please enter the simulation time as an INT value")
         print("You selected "+in4)
         testT=int(in4)
-    setIn=0
-    while setIn==0:
-        in1=input("Would you like to proceed with the recommended settings? (y/n)")
-        if in1=="y":
-            default()
+    setIn1=None
+    setIn=None
+    DirSet=0
+    while DirSet==0:
+        inDir=input("Would you prefer to run a raw simulation or an object structure? (raw/obj)")
+        if inDir=="raw":
+            setIn1=1
+            setIn=0
+        elif inDir=="obj":
             setIn=1
-        elif in1=="n":
-            alternate()
-            setIn=1
+            setIn1=0
+        else:
+            print("Invalid input. Please try again.")
+        while setIn1==0:
+            in1=input("Would you like to select a premade object or create a new one? (pre/new)")
+            if in1=="pre":
+                print("This feature is not available for this alpha version. Redirecting...")
+                setIn1=1
+            elif in1=="new":
+                print("This feature is not available for this alpha version. Redirecting...")
+                setIn1=1
+        while setIn==0:
+            in1=input("Would you like to proceed with the recommended settings? (y/n)")
+            if in1=="y":
+                default()
+                setIn=1
+                DirSet=1
+            elif in1=="n":
+                alternate()
+                setIn=1
+                DirSet=1
+            else:
+                print("Invalid input. Please try again.")
+            
 xP=xD
 yP=yD
 userInterface()

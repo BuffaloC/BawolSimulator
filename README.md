@@ -1,7 +1,10 @@
 # BawolSimulator
+
+#Right now, I know that this program is terrible. Believe me that I will fix it!
+
 # A python physics simulator running off of very simple core principles. It is easy to understand with a bit of perusing the code. 
 Version Alpha 1.0.1 (we don't even have a proper version system yet!)
-Note for experienced coders: I know that my code doesn't have efficient seed usage as of 3/8/23! Let me get this off the ground first. 
+Note for experienced coders: I know that my code doesn't have efficient seed usage as of 3/8/23! Let me get this off the ground first.
 
 # Developer's update:
 This engine is really, really slow. If you calculate for maps greater than x 20 by y 20 over 100 ticks, then you won't get a before and after result within a minute. 

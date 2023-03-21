@@ -1,6 +1,6 @@
 # BawolSimulator
 
-#Right now, I know that this program is terrible. Believe me that I will fix it!
+# Right now, I know that this program is terrible. Believe me that I will fix it!
 
 # A python physics simulator running off of very simple core principles. It is easy to understand with a bit of perusing the code. 
 Version Alpha 1.0.1 (we don't even have a proper version system yet!)
